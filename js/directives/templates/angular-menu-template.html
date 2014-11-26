@@ -1,0 +1,19 @@
+<div class="container">
+    <div id="sidebar">
+      <!-- Edit this part only -->
+        <ul>
+            <li ng-repeat="item in menuItems"><a href="">{{ item.title }}</a></li>
+        </ul>
+      <!-- END of editing -->
+    </div>
+    <div class="main-content" id="main-content">
+        <div class="swipe-area" ng-swipe-right="toggleMenu()" ng-swipe-left="toggleMenu()">
+            <a href="" data-toggle=".container" id="sidebar-toggle" ng-click="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+        <div class="content" ng-transclude></div>
+    </div>
+</div>

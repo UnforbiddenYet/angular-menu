@@ -1,0 +1,193 @@
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    -webkit-transition: left 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out;
+    -ms-transition: left 0.4s ease-in-out;
+    -o-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
+}
+
+.swipe-area {
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #f3f3f3;
+    z-index: 0;
+}
+
+#sidebar {
+    background: #DF314D;
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    left: -240px; /* This value should be equals to sidebar width */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index: 2;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin: 0;
+}
+
+#sidebar ul li a {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #C9223D;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+#sidebar ul li:hover a {
+    background: #C9223D;
+}
+
+.main-content {
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+.main-content .content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 60px;
+    width: 100%;
+}
+
+.main-content .content h1 {
+    font-weight: 100;
+}
+
+.main-content .content p {
+    width: 100%;
+    line-height: 160%;
+}
+
+.main-content #sidebar-toggle {
+    background: #DF314D;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    padding: 10px 7px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+.main-content #sidebar-toggle .bar {
+    display: block;
+    width: 18px;
+    margin-bottom: 3px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.main-content #sidebar-toggle .bar:last-child {
+    margin-bottom: 0;
+}
+
+/* common styles navigation effects from top */
+
+.wrapper-top #sidebar{
+    width: 100%;
+    height: 240px;
+    top: -240px; /* This value should be equals to sidebar height */
+    left: auto;
+}
+
+.wrapper-top .swipe-area{
+    width: 100%;
+    height: 50px;
+}
+
+.wrapper-top .main-content .content{
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+/* common styles navigation effects from right */
+.wrapper-right #sidebar{
+    right: -240px;  /* This value should be equals to sidebar width */
+    left: auto;
+}
+
+.wrapper-right .swipe-area{
+    right: 0;
+    left: auto;
+}
+
+.wrapper-right .main-content .content{
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+/* common styles navigation effects from bottom */
+.wrapper-bottom #sidebar{
+    display: block;
+    width: 100%;
+    height: 240px;
+    bottom: -240px; /* This value should be equals to sidebar height */
+    left: auto;
+    top:auto;
+}
+
+.wrapper-bottom .swipe-area {
+    display: block;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    top: auto;
+}
+
+.wrapper-bottom .main-content .content{
+    padding-left: 10px;
+}
+
+
+/* top reveal */
+.wrapper-top.reveal #sidebar {
+    z-index: 0;
+    top: 0
+}
+
+/* right reveal */
+.wrapper-right.reveal #sidebar {
+    z-index: 0;
+    right: 0
+}
+
+/* bottom reveal */
+.wrapper-bottom.reveal #sidebar {
+    z-index: 0;
+    bottom: 0
+}
+/* left reveal */
+.reveal #sidebar {
+    z-index: 0;
+    left: 0
+}

@@ -1,7 +1,7 @@
 angular-menu
 =====================
 
-An Angular directive for showing an offscreen menu on swipe.
+An Angular directive for showing an offscreen menu on swipe or on click.
 Supports 4 sides(top, right, bottom and left) and 4 effects (overlay, push, reveal, bounce).
 
 ##Dependencies:

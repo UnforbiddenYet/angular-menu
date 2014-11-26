@@ -1,12 +1,12 @@
 angular-menu
 =====================
 
-An Angular directive for sliding out an offscreen menu on swipe.
-Supports 4 sides(top, right, bottom and left) and 4 effects (overlay, push, reveal, bounce)
+An Angular directive for showing an offscreen menu on swipe.
+Supports 4 sides(top, right, bottom and left) and 4 effects (overlay, push, reveal, bounce).
 
 ##Dependencies:
 
- - GreenSock(for animating)
+ - Greensock(for animating)
  - ng-touch(optional, for swipe support)
 
 ##How to use:
